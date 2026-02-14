@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Valentine's Day ❤️</h1>
+        <p class="love-text">You are my favorite person in this world 💕</p>
+
+        <div class="photo-gallery">
+            <!-- ADD YOUR PHOTOS HERE -->
+            <img src="images/photo1.jpg" alt="Our Memory 1">
+            <img src="images/photo2.jpg" alt="Our Memory 2">
+            <img src="images/photo3.jpg" alt="Our Memory 3">
+        </div>
+
+        <button onclick="showMessage()">Click Me 💌</button>
+        <p id="hiddenMessage" class="hidden">
+            I love you today, tomorrow, and forever 💖
+        </p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("hiddenMessage").classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+</html>

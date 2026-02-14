@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our First Valentine ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <div class="music-player">
+        <audio id="bgMusic" loop>
+            <source src="Christina Perri - A Thousand Years.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button class="music-btn" id="musicBtn" title="Thousand Years - Christina Perri">
+            <span class="music-icon">🎵</span>
+        </button>
+    </div>
+
+    <!-- Page 1: Click to Reveal -->
+    <div id="page-1" class="page active">
+        <div class="container">
+            <div class="click-container">
+                <div class="click-box" id="clickBox">
+                    <p class="click-text">CLICK ME<br>I HAVE A SURPRISE FOR YOU</p>
+                
+                </div>
+                <div id="revealedMessage" class="revealed-message hidden">
+                    <h1>💕 You Are My Valentine 💕</h1>
+                    <p>This is to remember our 1st Valentine's Day together...</p>
+                    <button onclick="goToPage(2)" class="continue-btn">Continue →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Photo 1 -->
+    <div id="page-2" class="page">
+        <div class="photo-container">
+            <img src="pictures/1000137325.jpg.jpeg" alt="Our Memory 1" class="photo-img">
+            <div class="quote-box">
+                <p class="quote">"Every moment with you is a treasure I'll cherish forever."</p>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="goToPage(1)" class="nav-btn prev-btn">← Previous</button>
+                <button onclick="goToPage(3)" class="nav-btn next-btn">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Photo 2 -->
+    <div id="page-3" class="page">
+        <div class="photo-container">
+            <img src="pictures/1000172627.jpg.jpeg" alt="Our Memory 2" class="photo-img">
+            <div class="quote-box">
+                <p class="quote">"I know that your love language is different."</p>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="goToPage(2)" class="nav-btn prev-btn">← Previous</button>
+                <button onclick="goToPage(4)" class="nav-btn next-btn">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Photo 3 -->
+    <div id="page-4" class="page">
+        <div class="photo-container">
+            <img src="pictures/IMG-20250914-WA0368.jpg" alt="Our Memory 3" class="photo-img">
+            <div class="quote-box">
+                <p class="quote">"Sometimes it hurts me, But it doesn't matter...."</p>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="goToPage(3)" class="nav-btn prev-btn">← Previous</button>
+                <button onclick="goToPage(5)" class="nav-btn next-btn">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Photo 4 -->
+    <div id="page-5" class="page">
+        <div class="photo-container">
+            <img src="pictures/IMG-20250914-WA0416.jpg" alt="Our Memory 4" class="photo-img">
+            <div class="quote-box">
+                <p class="quote">"I love that type...😌❤️"</p>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="goToPage(4)" class="nav-btn prev-btn">← Previous</button>
+                <button onclick="goToPage(6)" class="nav-btn next-btn">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 6: Photo 5 -->
+    <div id="page-6" class="page">
+        <div class="photo-container">
+            <img src="pictures/WhatsApp Image 2026-02-14 at 5.12.58 PM.jpeg" alt="Our Memory 5" class="photo-img">
+            <div class="quote-box">
+                <p class="quote">"The days I spent with you are the most precious moments of my life."</p>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="goToPage(5)" class="nav-btn prev-btn">← Previous</button>
+                <button onclick="goToPage(7)" class="nav-btn next-btn">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 7: Photo 6 (Last Page) -->
+    <div id="page-7" class="page">
+        <div class="photo-container">
+            <img src="pictures/WhatsApp Image 2026-02-14 at 5.32.28 PM.jpeg" alt="Our Memory 6" class="photo-img">
+            <div class="quote-box">
+                <p class="quote">"Our love is really an adventure. I LOVE it...😘❤️"</p>
+            </div>
+            <div class="final-message">
+                <h2>💖 You Are My Valentine FOREVER 💖</h2>
+            </div>
+            <div class="nav-buttons">
+                <button onclick="
+                    
+                    
+                    goToPage(6)" class="nav-btn prev-btn">← Previous</button>
+                <button onclick="goToPage(1)" class="nav-btn restart-btn">Start Over ↻</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
